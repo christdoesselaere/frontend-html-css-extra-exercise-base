@@ -1,0 +1,59 @@
+/*noinspection CssUnknownTarget*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --bg-color: hsl(44, 73%, 97%);
+    --text-color: hsl(200, 43%, 42%);
+    --item-color: hsl(194, 52%, 95%);
+}
+
+body {
+    background-color: var(--bg-color);
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1,
+h3,
+p {
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: var(--item-color);
+    height: 350px;
+    margin: 16px;
+    padding: 16px;
+    flex-basis: 215px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/*for tablet and bigger, onjuiste screen width gebruikt om pagina gelijk met voorbeeld te krijgen*/
+@media screen and (min-width: 862px) {
+    .container {
+        flex-direction: row;
+    }
+}
